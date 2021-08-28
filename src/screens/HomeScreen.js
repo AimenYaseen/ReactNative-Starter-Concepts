@@ -5,20 +5,32 @@ const HomeScreen = ({ navigation }) => {
   return (
     <View>
       <Text style={styles.text}>Hi there!</Text>
-      <Button
-        onPress={() => navigation.navigate("Component")}
-        title="Go to Components Screen"
-      />
-      <TouchableOpacity
-        onPress={() => navigation.navigate("List")}
-        style={styles.touchStyle}
-      >
-        <Text style={styles.text2}>GO TO LIST SCREEN</Text>
-      </TouchableOpacity>
-      <Button
-        onPress={() => navigation.navigate("Image")}
-        title="Go to Image Screen"
-      />
+      <View style={{ height: 300, width: 300, marginLeft: 30 }}>
+        <Button
+          onPress={() => navigation.navigate("Component")}
+          title="Go to Components Screen"
+        />
+        <TouchableOpacity
+          onPress={() => navigation.navigate("List")}
+          style={styles.touchStyle}
+        >
+          <Text style={styles.text2}>GO TO LIST SCREEN</Text>
+        </TouchableOpacity>
+        <Button
+          onPress={() => navigation.navigate("Image")}
+          title="Go to Image Screen"
+        />
+        <Text />
+        <Button
+          onPress={() => navigation.navigate("Counter")}
+          title="Go to Counter Screen"
+        />
+        <Text />
+        <Button
+          onPress={() => navigation.navigate("Color")}
+          title="Go to Color Screen"
+        />
+      </View>
     </View>
   );
 };
@@ -36,8 +48,8 @@ const styles = StyleSheet.create({
     color: "white",
   },
   touchStyle: {
-    marginBottom: 10,
-    marginTop: 10,
+    marginBottom: 17,
+    marginTop: 17,
     textAlign: "center",
     backgroundColor: "#0E8DE8",
     paddingBottom: 7,
