@@ -1,0 +1,29 @@
+Box Object Model
+- used to Position one element 
+- deals with height, width, border, margin, padding
+
+
+FlexBox
+- used to Position multiple elements inside a parent (siblings) 
+- alignItems : flexDirection:column (horizontaly), flexDirection:row (vertically)
+    stretch(default), center, flex-start, flex-end
+- flexDirection : column(default), row
+- justifyContent : flexDirection:column (vertically), flexDirection:row (horizontaly)
+    flex-start(default), center, flex-end, space-between, space-around
+
+                  Child Properties
+- flex : 1, 2, 3, 4 (applied on children to take as much space as needed)
+- alignSelf : stretch(default), center, flex-start, flex-end
+
+
+Position
+- to Position one element inside a parent
+- use to override Box Object Model/FlexBox
+
+- Relative: default
+- Absolute: object set himself according to parent and ignore siblings
+
+- Top, Bottom, Right, Left
+spacing between one element to its sibling, dosenot affect other children
+overlap them
+dosenot work like margin
