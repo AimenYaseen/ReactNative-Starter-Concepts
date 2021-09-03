@@ -1,0 +1,10 @@
+Reducer : A function that manages changes to an object (manages different states)
+Used : when we have closely related states
+       And we know exactly when to update them
+Arguments : called with two object Arguments
+            1. object with all our states ({red:0, green:0, blue:0})
+            2. object that describes the update ({color:'red', amountToChange: 20})
+Technicalities:
+            1. We never change Argument 1 directly
+            2. Return a value to be used as Argument 1
+Either Reducer or useState hook

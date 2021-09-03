@@ -27,6 +27,11 @@ const HomeScreen = ({ navigation }) => {
         />
         <Text />
         <Button
+          onPress={() => navigation.navigate("CounterReducer")}
+          title="Go to Counter Screen Reducer"
+        />
+        <Text />
+        <Button
           onPress={() => navigation.navigate("Color")}
           title="Go to Color Screen"
         />
@@ -34,6 +39,16 @@ const HomeScreen = ({ navigation }) => {
         <Button
           onPress={() => navigation.navigate("Square")}
           title="Go to RGB Square Screen"
+        />
+        <Text />
+        <Button
+          onPress={() => navigation.navigate("SquareReducer")}
+          title="Go to Square Screen Reducer"
+        />
+        <Text />
+        <Button
+          onPress={() => navigation.navigate("Text")}
+          title="Go to Text Input Screen"
         />
       </View>
     </View>
