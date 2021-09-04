@@ -5,7 +5,13 @@ const HomeScreen = ({ navigation }) => {
   return (
     <View>
       <Text style={styles.text}>Hi there!</Text>
-      <View style={{ height: 300, width: 300, marginLeft: 30 }}>
+      <View
+        style={{
+          height: 600,
+          width: 300,
+          marginLeft: 30,
+        }}
+      >
         <Button
           onPress={() => navigation.navigate("Component")}
           title="Go to Components Screen"
@@ -24,11 +30,6 @@ const HomeScreen = ({ navigation }) => {
         <Button
           onPress={() => navigation.navigate("Counter")}
           title="Go to Counter Screen"
-        />
-        <Text />
-        <Button
-          onPress={() => navigation.navigate("CounterReducer")}
-          title="Go to Counter Screen Reducer"
         />
         <Text />
         <Button
@@ -54,6 +55,11 @@ const HomeScreen = ({ navigation }) => {
         <Button
           onPress={() => navigation.navigate("Box")}
           title="Go to Layout Screen"
+        />
+        <Text />
+        <Button
+          onPress={() => navigation.navigate("Exercise")}
+          title="Go to Exercise Solution"
         />
       </View>
     </View>
